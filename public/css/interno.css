@@ -1,0 +1,21 @@
+﻿.form-floating-group > input {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.ui-autocomplete {
+    max-height: 150px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    z-index:9999;
+}
+
+.ui-autocomplete-loading {
+    background: white url("../img/ui-anim.gif") right center no-repeat;
+}
+/* IE 6 doesn't support max-height
+   * we use height instead, but this forces the menu to always be this tall
+   */
+* html .ui-autocomplete {
+    height: 150px;
+}
